@@ -1,3 +1,6 @@
+@import "nav.css";
+@import "footer.css";
+
 ins {
     color: #59c;
 }
@@ -10,7 +13,7 @@ body {
     position: relative;
     min-height: 100vh;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 100vw;
     grid-template-rows: 100px 1fr 50px;
     grid-template-areas:
     "hd"
@@ -19,83 +22,58 @@ body {
     margin: 0;
 }
 
-.hd {
-    grid-area: hd;
-}
-
-.navbar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: #bdbdbd;
-}
-
-
-li a {
-    display: block;
-    color: #666;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    float: left;
-}
-
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-    background-color: rgb(84, 149, 175);
-}
-
-.active {
-    background-color: rgb(109, 191, 223);
-}
-
 .content {
-    display: flex;
+    position: relative;
+    transform: translateY(100px);
+    /* display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; */
 }
 
-.project-list {
+.blog-list {
+    margin-top: 30px;
     grid-area: main;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-.project {
-    border: 2px solid red;
-    width: 150px;
-    height: 100px;
+.blog {
+    border: 2px solid rgb(84, 149, 175);
+    box-shadow: 5px 5px 10px #BBB;
+    border-radius: 50px;
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    margin: 25px;
 }
 
-.ft {
-    grid-area: ft;
-    position: aboslute;
-    bottom: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.blog:hover {
+    box-shadow: 10px 10px 20px  #BBB;
+}
+
+.blog a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: #666;
+}
+
+.blog p {
+    padding-top: 30px;
+    text-align: center;
 }
 
 @media(max-width: 500px) {
-    li a {
-        text-align: center;
-        float: none;
-    }
-    
-    .navbar {
-        display: flex;
+    .blog-list {
         flex-direction: column;
     }
 
-    .project-list {
-        flex-direction: column;
-    }
-
-    .project {
+    .blog {
         width: 50vw;
-        height: 100px;
+        height: 150px;
     }
 
     .container {
@@ -104,9 +82,8 @@ li a:hover {
 }
 
 @media(min-width: 1100px) {
-    .navbar {
-        position: fixed;
-        top: 0;
-        width: 100%;
-    }
+
 }
+
+
+

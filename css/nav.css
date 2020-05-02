@@ -1,0 +1,85 @@
+.hd {
+    grid-area: hd;
+    background-image: url(../images/yellow-polka.jpg);
+    background-size: contain;
+    height: 120px;
+}
+
+.logo {
+    position: absolute;
+    top: 11px;
+    left: 50px;
+    height: 100px;
+    width: 100px;
+    background-image: url(../images/TheChosenOne.jpg);
+    background-size: contain;
+    border-radius: 20px;
+}
+
+.headerTitle {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 50vw;
+    transform: translateX(-50%);
+    padding: 20px 0;
+    border-radius: 30px;
+    width: 400px;
+    height: 40px;
+    background-color: #fff16f;
+    text-align: center;
+}
+
+.navbar {
+    font-size: 20px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li a {
+    display: block;
+    border-radius: 50px;
+    color: #666;
+    text-align: center;
+    margin: 32px 10px;
+    padding: 15px 15px;
+    text-decoration: none;
+    float: right;
+    background-color: rgb(255, 241, 111);
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: rgb(228, 194, 42);
+}
+
+.active {
+    background-color: rgb(247, 210, 47);
+}
+
+@media(max-width: 500px) {
+    .hd {
+        background-color: rgb(255, 224, 87);
+    }
+
+    .topHeader {
+        padding-left: 120px;
+        width: 170px;
+        margin-top: 20px;
+        background-color: rgb(255, 224, 87);
+    }
+
+    li a {
+        padding: 14px 16px;
+        text-align: center;
+        float: none;
+    }
+    
+    .navbar {
+        margin-top: 140px;
+        display: flex;
+        flex-direction: column;
+    }
+}  
+
