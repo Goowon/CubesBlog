@@ -2,8 +2,6 @@
 
 .hd {
     grid-area: hd;
-    /* background-image: url(../images/yellow-polka.jpg);
-    background-size: contain; */
 }
 
 .logo {
@@ -19,7 +17,6 @@
     position: absolute;
     color: #666;
     border-radius: 30px;
-    background-color: #fff16f;
 }
 
 .navbar {
@@ -35,7 +32,6 @@ li a {
     color: #666;
     text-align: center;
     text-decoration: none;
-    background-color: rgb(255, 241, 111);
 }
 
 /* Change the link color to #111 (black) on hover */
@@ -44,35 +40,36 @@ li a:hover {
 }
 
 .active {
-    background-color: rgb(247, 210, 47);
+    background-color: #f5f2d0;
 }
 
-@media(max-width: 500px) {
+@media(max-width: 699px) {
+    .headerTitle {
+        color: #666;
+        font-size: 1.8em;
+        font-weight: bolder;
+        padding: 0;
+        margin: 10px 0 0 30vw;
+        width: 150px;
+        transform: translateX(50%);
+    }
+}
+
+@media(max-width: 1099px) {
     .hd {
-        background-color: rgb(255, 224, 87);
-        height: 140px;
+        background-color: #ffffbd;
+        height: 311px;
     }
 
     .logo {
         margin: 20px 50px;
     }
 
-    .headerTitle {
-        color: #666;
-        font-size: 1.8em;
-        font-weight: bolder;
-        padding: 10px 0 10px 10px;
-        margin-left: 25vw;
-        width: 160px;
-        margin-top: 15px;
-        transform: translateX(50%);
-        background-color: rgb(255, 224, 87);
-    }
-
     li a {
         padding: 14px 16px;
         text-align: center;
         float: none;
+        background-color: #fbf7f5;
     }
     
     .navbar {
@@ -82,7 +79,18 @@ li a:hover {
     }
 }  
 
-@media(min-width: 501px) {
+@media(min-width: 700px) and (max-width: 1099px) {
+    .headerTitle {
+        color: #666;
+        font-size: 3em;
+        padding: 0;
+        margin: 40px 0 0 60vw;
+        width: 75vw;
+        transform: translateX(-45%);
+    }
+}
+
+@media(min-width: 1100px) {
     .hd {
         height: 120px;
     }
@@ -99,13 +107,15 @@ li a:hover {
         width: 450px;    
         transform: translateX(-50%);
         height: 40px; 
-        text-align: center;  
+        text-align: center;      
+        background-color: #f9f9f9;
     }
 
     li a {
         margin: 32px 10px;
         padding: 15px 15px;
         float: right;    
+        background-color: #f9f9f9;
         border-radius: 50px;
     }
     
