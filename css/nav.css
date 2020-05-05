@@ -28,7 +28,7 @@
     overflow: hidden;
 }
 
-li a {
+.navbar li a {
     display: block;
     color: #666;
     text-align: center;
@@ -36,7 +36,7 @@ li a {
 }
 
 /* Change the link color to #111 (black) on hover */
-li a:hover {
+.navbar i a:hover {
     background-color: rgb(228, 194, 42);
 }
 
@@ -62,7 +62,7 @@ li a:hover {
         margin: 20px 50px;
     }
 
-    li a {
+    .navbar li a {
         padding: 14px 16px;
         text-align: center;
         background-color: #fbf7f5;
@@ -112,7 +112,7 @@ li a:hover {
         justify-content: flex-end;
     }
 
-    li a {
+    .navbar li a {
         margin: 32px 10px;
         padding: 15px 15px;
         background-color: #f9f9f9;

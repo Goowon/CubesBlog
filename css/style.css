@@ -1,6 +1,7 @@
 @import "nav.css";
 @import "footer.css";
 @import "blog-list.css";
+@import "credits-box.css";
 
 ins {
     color: #59c;
@@ -48,7 +49,7 @@ body {
     }
 
     .container {
-        grid-template-rows: 280px 1fr 100px;
+        grid-template-rows: 340px 1fr 100px;
     }
 }
 
@@ -58,7 +59,7 @@ body {
     }
 
     .container {
-        grid-template-rows: 280px 1fr 100px;
+        grid-template-rows: 340px 1fr 100px;
     }
 }
 

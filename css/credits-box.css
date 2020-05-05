@@ -1,0 +1,18 @@
+.credits-box {
+    width: 70vw;
+    height: min-content;
+    padding: 50px;
+    background-color: #fbf7f5;
+}
+
+.credits-box ul {
+    display: flex;
+    font-size: 20px;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.credits-box li a {
+    color: #666;
+    text-decoration: none;
+}
