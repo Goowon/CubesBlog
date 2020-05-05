@@ -1,13 +1,25 @@
 @import "nav.css";
 @import "footer.css";
-@import "blogPreview.css";
+@import "blog-list.css";
 
 ins {
     color: #59c;
 }
 
-body {
+html {
+    width: 100%;
+    height: 100%;
+    padding: 0;
     margin: 0;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
     font-family: 'Indie Flower', cursive;
     background-image: url(../images/yellow-polka.jpg);
 }
@@ -30,70 +42,34 @@ body {
     align-items: center;
 }
 
-.blog-list {
-    margin-top: 30px;
-    grid-area: main;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.blog {
-    border: 2px solid rgb(84, 149, 175);
-    box-shadow: 5px 5px 10px #BBB;
-    border-radius: 50px;
-    width: 300px;
-    height: 200px;
-    padding: 20px;
-    margin: 25px;
-}
-
-.blog:hover {
-    box-shadow: 10px 10px 20px  #BBB;
-}
-
-.blog a {
-    display: block;
-    text-decoration: none;
-    text-align: center;
-    color: #666;
-}
-
-.blog p {
-    padding-top: 30px;
-    text-align: center;
-}
-
-@media(max-width: 500px) {
+@media(max-width: 699px) {
     body {
         background-size: 20%;
     }
 
     .container {
-        grid-template-rows: 311px 1fr 100px;
-    }
-
-    .blog-list {
-        flex-direction: column;
-    }
-
-    .blog {
-        width: 50vw;
-        height: 150px;
+        grid-template-rows: 280px 1fr 100px;
     }
 }
 
-@media(min-width: 700px) {
+@media(min-width: 700px) and (max-width: 1099px) {
     body {
         background-size: 7%;
     }
 
     .container {
-        grid-template-rows: 311px 1fr 100px;
+        grid-template-rows: 280px 1fr 100px;
     }
 }
 
+@media(min-width: 1100px) {
+    body {
+        background-size: 7%;
+    }
+
+    .container {
+        grid-template-rows: 200px 1fr 100px;
+    }
+}
 
 
