@@ -48,7 +48,6 @@
         padding: 0;
         margin: 10px 0 0 30vw;
         width: 150px;
-        height: min-content;
         transform: translateX(50%);
     }
 }
