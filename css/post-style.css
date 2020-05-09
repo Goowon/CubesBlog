@@ -36,6 +36,12 @@ article p {
     font-size: 1.2em;
 }
 
+.DesignToolLink {
+    font-size: 2em;
+    text-decoration: none;
+    color: black;
+}
+
 
 @media(max-width: 1099px) {
     .content {
