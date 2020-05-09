@@ -55,7 +55,7 @@
 @media(max-width: 1099px) {
     .hd {
         background-color: #ffffbd;
-        height: 250px;
+        height: min-content;
     }
 
     .logo {
