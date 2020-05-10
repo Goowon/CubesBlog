@@ -10,6 +10,7 @@
     height: min-content;
     padding-bottom: 20px;
     font-size: 1.2em;
+    font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
 .blog-post {
@@ -19,7 +20,6 @@
     margin-bottom: 50px;
     height: min-content;
     padding: 10px;
-
 }
 
 .blog-post h2 {
@@ -67,8 +67,11 @@ article p {
         "bio blog .";
     }
 
-    .leftImg {
+    figure {
         float: left;
+    }
+
+    .leftImg {
         border-radius: 20px;
         margin-right: 15px;
         width: 360px;
